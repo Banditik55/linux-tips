@@ -26,9 +26,10 @@ $ sudo gedit /etc/default/grub
 $ sudo update-grub
 ```
 - Перезагружаем систему, и проверяем регулировку яркости.
-Данный способ работает не у всех, и имеет свои вариации.
+### Данный способ работает не у всех, и имеет свои вариации.
 
-acpi_backlight=video
-acpi_backlight=vendor
-acpi_backlight=native
-acpi_backlight=none
+#### Возможные варианты:
+- acpi_backlight=video
+- acpi_backlight=vendor
+- acpi_backlight=native
+- acpi_backlight=none
