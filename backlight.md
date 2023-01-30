@@ -1,16 +1,16 @@
 # Регулировка яркости экрана на ноутбуках
 
-## -1. доп. яркость
-$ xrandr --output LVDS --brightness 1.3
+### -1. доп. яркость
+#### $ xrandr --output LVDS --brightness 1.3
 
-## 0.
-$ sudo xbacklight -set 100
+### 0.
+#### $ sudo xbacklight -set 100
 
-## 1. программа brightnessctl
-$ brightnessctl s 255
+### 1. программа brightnessctl
+#### $ brightnessctl s 255
 
-## 2. Открываем в любом текстовом редакторе файл /etc/default/grub
-$ sudo gedit /etc/default/grub
+### 2. Открываем в любом текстовом редакторе файл /etc/default/grub
+#### $ sudo gedit /etc/default/grub
 Находим строчку
 GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”
 И заменяем её на
