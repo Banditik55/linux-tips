@@ -19,14 +19,13 @@ $ brightnessctl s 255
 ```
 $ sudo gedit /etc/default/grub
 ```
-Находим строчку GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”
-И заменяем её на
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=vendor"
-Обновляем GRUB
+- Находим строчку GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash”
+- И заменяем её на GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=vendor"
+- Обновляем GRUB
 ```
 $ sudo update-grub
 ```
-Перезагружаем систему, и проверяем регулировку яркости.
+- Перезагружаем систему, и проверяем регулировку яркости.
 Данный способ работает не у всех, и имеет свои вариации.
 
 acpi_backlight=video
